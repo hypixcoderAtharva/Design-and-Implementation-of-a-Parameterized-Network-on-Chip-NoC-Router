@@ -1,0 +1,9 @@
+noc_pkg.sv
+noc_if.sv
+input_buffer.sv
+route_compute.sv
+rr_arbiter.sv
+crossbar_sw.sv
+port_ctrl.sv
+router_top.sv
+noc_mesh_top.sv
