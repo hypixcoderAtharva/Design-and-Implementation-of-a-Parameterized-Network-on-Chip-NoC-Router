@@ -1,0 +1,86 @@
+# vsim -c tb_router_top 
+# Start time: 17:35:57 on Jul 22,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: input_buffer.sv(27): (vopt-13314) Defaulting port 'in_flit' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: output_controller.sv(20): (vopt-13314) Defaulting port 'xbar_data' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# //  Questa Sim-64
+# //  Version 2021.1 win64 Jan 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.router_config_pkg(fast)
+# Loading work.noc_pkg(fast)
+# Loading work.tb_router_top(fast)
+# === router_top testbench starting (router at 1,1) ===
+# --- Test 1: single-flit routing, one packet per direction ---
+# [115000] router port4: flit type=FLIT_HEAD_TAIL vc=0 dest=(1,1)
+# [115000] PASS port4: flit matched (ftype=3 vc=0 dest=(1,1) payload=a0000000)
+# [225000] router port2: flit type=FLIT_HEAD_TAIL vc=0 dest=(2,1)
+# [225000] PASS port2: flit matched (ftype=3 vc=0 dest=(2,1) payload=a0000001)
+# [335000] router port3: flit type=FLIT_HEAD_TAIL vc=0 dest=(0,1)
+# [335000] PASS port3: flit matched (ftype=3 vc=0 dest=(0,1) payload=a0000002)
+# [445000] router port1: flit type=FLIT_HEAD_TAIL vc=0 dest=(1,2)
+# [445000] PASS port1: flit matched (ftype=3 vc=0 dest=(1,2) payload=a0000003)
+# [555000] router port0: flit type=FLIT_HEAD_TAIL vc=0 dest=(1,0)
+# [555000] PASS port0: flit matched (ftype=3 vc=0 dest=(1,0) payload=a0000004)
+# --- Test 2: multi-flit packet (HEAD + 2 BODY + TAIL) ---
+# [715000] router port2: flit type=FLIT_HEAD vc=1 dest=(2,1)
+# [715000] PASS port2: flit matched (ftype=0 vc=1 dest=(2,1) payload=b0000000)
+# [725000] router port2: flit type=FLIT_BODY vc=1 dest=(2,1)
+# [725000] PASS port2: flit matched (ftype=1 vc=1 dest=(2,1) payload=b0000001)
+# [735000] router port2: flit type=FLIT_BODY vc=1 dest=(2,1)
+# [735000] PASS port2: flit matched (ftype=1 vc=1 dest=(2,1) payload=b0000002)
+# [745000] router port2: flit type=FLIT_TAIL vc=1 dest=(2,1)
+# [745000] PASS port2: flit matched (ftype=2 vc=1 dest=(2,1) payload=b0000003)
+# --- Test 3: concurrent packets on separate input ports ---
+# [985000] router port2: flit type=FLIT_HEAD vc=0 dest=(2,1)
+# [985000] router port3: flit type=FLIT_HEAD vc=0 dest=(0,1)
+# [985000] PASS port2: flit matched (ftype=0 vc=0 dest=(2,1) payload=c0000000)
+# [985000] PASS port3: flit matched (ftype=0 vc=0 dest=(0,1) payload=d0000000)
+# [995000] router port3: flit type=FLIT_BODY vc=0 dest=(0,1)
+# [995000] router port2: flit type=FLIT_BODY vc=0 dest=(2,1)
+# [995000] PASS port3: flit matched (ftype=1 vc=0 dest=(0,1) payload=d0000001)
+# [995000] PASS port2: flit matched (ftype=1 vc=0 dest=(2,1) payload=c0000001)
+# [1005000] router port2: flit type=FLIT_TAIL vc=0 dest=(2,1)
+# [1005000] router port3: flit type=FLIT_TAIL vc=0 dest=(0,1)
+# [1005000] PASS port2: flit matched (ftype=2 vc=0 dest=(2,1) payload=c0000002)
+# [1005000] PASS port3: flit matched (ftype=2 vc=0 dest=(0,1) payload=d0000002)
+# --- Test 4: credit-based back-pressure on East ---
+# [1235000] router port2: flit type=FLIT_HEAD vc=2 dest=(2,1)
+# [1235000] PASS port2: flit matched (ftype=0 vc=2 dest=(2,1) payload=e0000000)
+# [1245000] router port2: flit type=FLIT_BODY vc=2 dest=(2,1)
+# [1245000] PASS port2: flit matched (ftype=1 vc=2 dest=(2,1) payload=e0000001)
+# [1255000] router port2: flit type=FLIT_BODY vc=2 dest=(2,1)
+# [1255000] PASS port2: flit matched (ftype=1 vc=2 dest=(2,1) payload=e0000002)
+# [1265000] router port2: flit type=FLIT_BODY vc=2 dest=(2,1)
+# [1265000] PASS port2: flit matched (ftype=1 vc=2 dest=(2,1) payload=e0000003)
+# [1585000] PASS: East stalled after exactly VC_DEPTH=4 flits with no downstream credit (got 4)
+# [1615000] router port2: flit type=FLIT_BODY vc=2 dest=(2,1)
+# [1615000] PASS port2: flit matched (ftype=1 vc=2 dest=(2,1) payload=e0000004)
+# [1625000] router port2: flit type=FLIT_TAIL vc=2 dest=(2,1)
+# [1625000] PASS port2: flit matched (ftype=2 vc=2 dest=(2,1) payload=e0000005)
+# [1785000] PASS: remaining East flits drained once credit was granted
+# [1985000] PASS: no outstanding expected flits on North
+# [1985000] PASS: no outstanding expected flits on South
+# [1985000] PASS: no outstanding expected flits on East
+# [1985000] PASS: no outstanding expected flits on West
+# [1985000] PASS: no outstanding expected flits on Local
+# =====================================================
+#  RESULT: 28 PASSED, 0 FAILED
+#  *** ALL TESTS PASSED ***
+# =====================================================
+# ** Note: $finish    : tb_router.sv(314)
+#    Time: 1985 ns  Iteration: 1  Instance: /tb_router_top
+# End time: 17:36:26 on Jul 22,2026, Elapsed time: 0:00:29
+# Errors: 0, Warnings: 2
