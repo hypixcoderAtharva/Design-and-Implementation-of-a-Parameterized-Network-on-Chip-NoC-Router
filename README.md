@@ -1,1 +1,2 @@
-# Design-and-Implementation-of-a-Parameterized-Network-on-Chip-NoC-Router-
+# Design-and-Implementation-of-a-Parameterized-Network-on-Chip-NoC-Router
+Designed and implemented a parameterized Network-on-Chip (NoC) Router in SystemVerilog, featuring configurable data width, buffer depth, and router ports using a modular RTL architecture.Developed a SystemVerilog verification environment with self-checking testbench, directed and constrained-random testcases, assertions (SVA), and functional coverage to validate routing, arbitration, buffering, and flow control.Verified router functionality through simulation, debugging, and waveform analysis, ensuring correct packet transfer, arbitration fairness, and reliable operation across normal and corner-case scenarios.
