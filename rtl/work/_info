@@ -1,0 +1,630 @@
+m255
+K4
+z2
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/VLSI/Desktop/Major Project/noc_router_project_paid/rtl
+vcredit_manager
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1785400694
+!i10b 1
+!s100 [kV@li0a[EF3F5?P8cW=L1
+IKGdUAnFjfaY4Z_RehEzON2
+S1
+Z3 dC:/Users/VLSI/Desktop/Major/noc_router_project_paid/rtl
+Z4 w1784719898
+8credit_manager.sv
+Fcredit_manager.sv
+!i122 11
+L0 12 38
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z7 !s108 1785400694.000000
+!s107 virtual_channel.sv|vc_allocator.sv|switch_allocator.sv|statistics.sv|rr_arbiter.sv|route_compute.sv|router_top.sv|router_config.sv|router.sv|performance_monitor.sv|output_controller.sv|noc_vc_pkg.sv|noc_pkg.sv|noc_mesh_top.sv|noc_if.sv|network_interface.sv|mux5.sv|input_buffer.sv|flow_control.sv|fifo_buffer.sv|fifo.sv|error_checker.sv|encoder.sv|demux5.sv|decoder.sv|crossbar_switch.sv|credit_manager.sv|
+Z8 !s90 -cover|bcest|credit_manager.sv|crossbar_switch.sv|decoder.sv|demux5.sv|encoder.sv|error_checker.sv|fifo.sv|fifo_buffer.sv|flow_control.sv|input_buffer.sv|mux5.sv|network_interface.sv|noc_if.sv|noc_mesh_top.sv|noc_pkg.sv|noc_vc_pkg.sv|output_controller.sv|performance_monitor.sv|router.sv|router_config.sv|router_top.sv|route_compute.sv|rr_arbiter.sv|statistics.sv|switch_allocator.sv|vc_allocator.sv|virtual_channel.sv|
+!i113 0
+Z9 !s102 -cover bcest
+Z10 o-cover bcest -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 tCvgOpt 0
+vdecoder
+R1
+R2
+!i10b 1
+!s100 ELzJWZoAACKB2fL=OId^13
+ICfnUdF]17UQPR@CMXD1:A0
+S1
+R3
+w1784719899
+8decoder.sv
+Fdecoder.sv
+!i122 11
+L0 9 15
+R5
+R6
+r1
+!s85 0
+31
+R7
+Z12 !s107 virtual_channel.sv|vc_allocator.sv|switch_allocator.sv|statistics.sv|rr_arbiter.sv|route_compute.sv|router_top.sv|router_config.sv|router.sv|performance_monitor.sv|output_controller.sv|noc_vc_pkg.sv|noc_pkg.sv|noc_mesh_top.sv|noc_if.sv|network_interface.sv|mux5.sv|input_buffer.sv|flow_control.sv|fifo_buffer.sv|fifo.sv|error_checker.sv|encoder.sv|demux5.sv|decoder.sv|crossbar_switch.sv|credit_manager.sv|
+R8
+!i113 0
+R9
+R10
+R11
+vdemux5
+R1
+R2
+!i10b 1
+!s100 Ka47FU:938M9HEOEzYNBU1
+I9CXb?Lh;3SjaWPRHJYA011
+S1
+R3
+R4
+8demux5.sv
+Fdemux5.sv
+!i122 11
+L0 9 23
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+vencoder
+R1
+R2
+!i10b 1
+!s100 iG0=UNZmSzK69>=E9RDIk2
+I]F>0Q4JL1A;Cfo5LFa7^13
+S1
+R3
+R4
+8encoder.sv
+Fencoder.sv
+!i122 11
+L0 9 18
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+verror_checker
+R1
+Z13 DXx4 work 7 noc_pkg 0 22 m5UU2[DK3@I==P;4BXY<i0
+R2
+!i10b 1
+!s100 Tn:32kD8<D6JamJjT5M??0
+IM[MA0_K50b6g891VbTBN@3
+S1
+R3
+Z14 w1784963811
+8error_checker.sv
+Ferror_checker.sv
+!i122 11
+L0 9 38
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+vfifo
+R1
+R2
+!i10b 1
+!s100 [IRc][eLdS]3?W0536jNm2
+Im@aIlenR[CLjg`LM:_04K1
+S1
+R3
+w1784960654
+8fifo.sv
+Ffifo.sv
+!i122 11
+L0 8 55
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+vfifo_buffer
+R1
+R2
+!i10b 1
+!s100 7e9^f5<LzYb872:AYSZbF0
+IOKMO5o[:hK`EOLHoQzDE`3
+S1
+R3
+R14
+8fifo_buffer.sv
+Ffifo_buffer.sv
+!i122 11
+L0 7 44
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+vflow_control
+R1
+Z15 DXx4 work 17 router_config_pkg 0 22 D[`=70j3D9[AHBO5YSIXo1
+R2
+!i10b 1
+!s100 g97Ok^iKGjh8AaKjUI07_0
+I6cZCAc<Yc^HVGMLJ[jzFS0
+S1
+R3
+R4
+8flow_control.sv
+Fflow_control.sv
+!i122 11
+L0 12 17
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+vnetwork_interface
+R1
+R13
+R2
+!i10b 1
+!s100 EGIakF]@KYl`2gTQd<3Q_3
+II3jEnCNlB=35A[bE@1?GN3
+S1
+R3
+R14
+8network_interface.sv
+Fnetwork_interface.sv
+!i122 11
+L0 14 61
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+vnoc_mesh_top
+R1
+R13
+R2
+!i10b 1
+!s100 W>F3oDkfoR^k2fR^WZNle2
+IWHXDHD6_U@Vf;hdSGO3R;1
+S1
+R3
+R14
+8noc_mesh_top.sv
+Fnoc_mesh_top.sv
+!i122 11
+L0 16 173
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+Xnoc_pkg
+R1
+R2
+!i10b 1
+!s100 CFKJPoZ;f^JN6;CJbY>[:2
+IkO<jEB^k7>AaI9Y>J`d4X0
+S1
+R3
+w1785137543
+8noc_pkg.sv
+Fnoc_pkg.sv
+!i122 11
+L0 7 0
+VkO<jEB^k7>AaI9Y>J`d4X0
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+Xnoc_vc_pkg
+R1
+R15
+R2
+!i10b 1
+!s100 YVVZ@34U7NMnSj0KTaAhj3
+IWM41;@Izn81J74EnHB?RY2
+S1
+R3
+w1785136429
+8noc_vc_pkg.sv
+Fnoc_vc_pkg.sv
+!i122 11
+L0 21 0
+VWM41;@Izn81J74EnHB?RY2
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+voutput_controller
+R1
+R15
+Z16 DXx4 work 10 noc_vc_pkg 0 22 WM41;@Izn81J74EnHB?RY2
+R2
+!i10b 1
+!s100 >RoK6nbDFB5_Ahm[a8<4B2
+IiXcU0?IdK`PjXm;:7gNnU0
+S1
+R3
+w1785136445
+8output_controller.sv
+Foutput_controller.sv
+!i122 11
+L0 12 57
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+vperformance_monitor
+R1
+Z17 DXx4 work 7 noc_pkg 0 22 kO<jEB^k7>AaI9Y>J`d4X0
+R2
+!i10b 1
+!s100 [_@TUEfFXK5lV1DWG^]8N2
+IBi2IN2XhE:5SJmjkVH1Ej1
+S1
+R3
+R14
+8performance_monitor.sv
+Fperformance_monitor.sv
+!i122 11
+L0 9 53
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+vroute_compute
+R1
+Z18 DXx4 work 17 router_config_pkg 0 22 0dO=diGf`Em0nF?BZP:mY1
+R16
+R2
+!i10b 1
+!s100 `AUz<7C=U@Y1^457V0Nl62
+I^^I=R5h[dZN0oOMK71AU30
+S1
+R3
+w1785136479
+8route_compute.sv
+Froute_compute.sv
+!i122 11
+L0 9 26
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+vrouter
+R1
+R17
+R2
+!i10b 1
+!s100 O2X20Uk3f8_2=`L`mNV;[0
+IRjzYFHiTZMF:i^A0ffd1g0
+S1
+R3
+w1785137108
+8router.sv
+Frouter.sv
+!i122 11
+L0 17 113
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+Xrouter_config
+R1
+!s110 1784965899
+!i10b 1
+!s100 d24co]kCGH_m;f1SENnMf3
+IAlhXKm7l77b@`]P`]KNEI0
+S1
+R0
+w1784965894
+Z19 8router_config.sv
+Z20 Frouter_config.sv
+!i122 4
+Z21 L0 15 0
+VAlhXKm7l77b@`]P`]KNEI0
+R6
+r1
+!s85 0
+31
+!s108 1784965899.000000
+!s107 router_config.sv|
+!s90 router_config.sv|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R11
+Xrouter_config_pkg
+R1
+R2
+!i10b 1
+!s100 m:HmEV;^c36Y7J>iK?@ZW2
+I0dO=diGf`Em0nF?BZP:mY1
+S1
+R3
+w1784965919
+R19
+R20
+!i122 11
+R21
+V0dO=diGf`Em0nF?BZP:mY1
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+vrouter_top
+R1
+R18
+R16
+R2
+!i10b 1
+!s100 cc;]UiISa:J0mbY=:5SiK2
+IfaaE1FHM0QeC]]AiOY2^=1
+S1
+R3
+w1785136530
+8router_top.sv
+Frouter_top.sv
+!i122 11
+L0 26 232
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+vrr_arbiter
+R1
+R2
+!i10b 1
+!s100 Z]cM[V]R]UWHfbV9k4EVg2
+I]P9D4PRa?ge=mSUUb[GSV2
+S1
+R3
+w1785136465
+8rr_arbiter.sv
+Frr_arbiter.sv
+!i122 11
+L0 23 40
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+vstatistics
+R1
+R17
+R2
+!i10b 1
+!s100 NkfR`K71GeFkd;UJ;ElGY2
+IQ?6M5UeeAmDF;@^QAJ_792
+S1
+R3
+R14
+8statistics.sv
+Fstatistics.sv
+!i122 11
+L0 8 52
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+vswitch_allocator
+R1
+R18
+R16
+R2
+!i10b 1
+!s100 en2e3PNka5D_0m2?A2:1h2
+IV`c]hHMzlE<[6`;_KB]aP0
+S1
+R3
+w1785136442
+8switch_allocator.sv
+Fswitch_allocator.sv
+!i122 11
+L0 23 110
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+vvc_allocator
+R1
+R18
+R16
+R2
+!i10b 1
+!s100 LDF_ZhKA]<=VO]=Z0zaU73
+IJezO47OSOD6bnY8@N`3X50
+S1
+R3
+w1785136440
+8vc_allocator.sv
+Fvc_allocator.sv
+!i122 11
+L0 15 51
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
+vvirtual_channel
+R1
+R18
+R16
+R2
+!i10b 1
+!s100 O`e9U2nVb173cbo<JDNT90
+IcmAJ_fT1ZIXImQfUFzikE0
+S1
+R3
+w1785136438
+8virtual_channel.sv
+Fvirtual_channel.sv
+!i122 11
+L0 10 86
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R8
+!i113 0
+R9
+R10
+R11
