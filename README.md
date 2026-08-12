@@ -2,7 +2,7 @@
 
 SystemVerilog implementations of a parameterized 2-D mesh Network-on-Chip (NoC), with UVM verification, UVM-free self-checking RTL tests, coverage flows, and ZedBoard FPGA build support.
 
-The active source tree is [`noc_router_project_paid/`](noc_router_project_paid/). It contains two separate router designs; choose one track and its corresponding top module rather than mixing files from both.
+The active source tree is [`noc_router_project/`](noc_router_project/). It contains two separate router designs; choose one track and its corresponding top module rather than mixing files from both.
 
 ## Highlights
 
@@ -136,7 +136,7 @@ Coverage figures apply only to Track A and use different benches, runtimes, and 
 
 ## FPGA implementation
 
-The project includes ZedBoard FPGA wrappers, constraints, self-test traffic injectors, ILA/VIO support, build scripts, and programming scripts in [`noc_router_project_paid/FPGA/`](noc_router_project_paid/FPGA/).
+The project includes ZedBoard FPGA wrappers, constraints, self-test traffic injectors, ILA/VIO support, build scripts, and programming scripts in [`noc_router_project/FPGA/`](noc_router_project/FPGA/).
 
 | Track | Device | Target clock | Timing result |
 |---|---|---:|---|
@@ -154,9 +154,9 @@ Before building hardware, simulate `FPGA/sim/tb_noc_fpga_core.sv`. After impleme
 
 ## Configuration
 
-Track A parameters are defined in [`rtl/noc_pkg.sv`](noc_router_project_paid/rtl/noc_pkg.sv), including mesh dimensions, FIFO depth, data width, and coordinate width.
+Track A parameters are defined in [`rtl/noc_pkg.sv`](noc_router_project/rtl/noc_pkg.sv), including mesh dimensions, FIFO depth, data width, and coordinate width.
 
-Track B parameters are defined in [`rtl/router_config.sv`](noc_router_project_paid/rtl/router_config.sv):
+Track B parameters are defined in [`rtl/router_config.sv`](noc_router_project/rtl/router_config.sv):
 
 ```systemverilog
 parameter int NUM_PORTS  = 5;
@@ -171,22 +171,22 @@ parameter int Y_WIDTH    = 4;
 
 ## Documentation
 
-Start with the [project index](noc_router_project_paid/INDEX.md). It links to the architecture, design decisions, verification guide, timing analysis, FPGA implementation guide, and focused per-module notes.
+Start with the [project index](noc_router_project/INDEX.md). It links to the architecture, design decisions, verification guide, timing analysis, FPGA implementation guide, and focused per-module notes.
 
 Useful entry points:
 
-- [Project map and track selection](noc_router_project_paid/context_mkdwn/00-project-map.md)
-- [Track A router details](noc_router_project_paid/context_mkdwn/10-rtl-flat-router.md)
-- [Track B architecture](noc_router_project_paid/context_mkdwn/20-rtl-vc-input-buffer.md)
-- [Simulation and coverage flow](noc_router_project_paid/context_mkdwn/40-sim-flow.md)
-- [Known issues and limitations](noc_router_project_paid/context_mkdwn/90-known-issues.md)
-- [ZedBoard bring-up for Track A](noc_router_project_paid/context_mkdwn/50-fpga-bringup.md)
+- [Project map and track selection](noc_router_project/context_mkdwn/00-project-map.md)
+- [Track A router details](noc_router_project/context_mkdwn/10-rtl-flat-router.md)
+- [Track B architecture](noc_router_project/context_mkdwn/20-rtl-vc-input-buffer.md)
+- [Simulation and coverage flow](noc_router_project/context_mkdwn/40-sim-flow.md)
+- [Known issues and limitations](noc_router_project/context_mkdwn/90-known-issues.md)
+- [ZedBoard bring-up for Track A](noc_router_project/context_mkdwn/50-fpga-bringup.md)
 
 ## Important notes
 
 - The two tracks use different packages and types. Do not import `noc_pkg` into Track B modules; Track B uses `router_config_pkg` and `noc_vc_pkg`.
 - `rtl/` includes generated simulator work libraries and the project includes simulation artifacts. Keep source file lists explicit when compiling.
-- The original README inside `noc_router_project_paid/` predates later fixes. Prefer the root README, the project index, and the context notes for the current implementation status.
+- The original README inside `noc_router_project/` predates later fixes. Prefer the root README, the project index, and the context notes for the current implementation status.
 
 ## License
 
